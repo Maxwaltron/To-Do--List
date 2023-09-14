@@ -8,7 +8,7 @@ body, h1, ul, li, p, button, input {
 body {
     background: linear-gradient(135deg, #222, #333);
     color: #fff;
-    font-family: Arial, sans-serif;
+    font-family: 'Balsamiq Sans', cursive;
 }
 
 /* Center the container */
