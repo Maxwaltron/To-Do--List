@@ -1,2 +1,2 @@
 # To-Do-List
-A simple to do list web app coded in js,html,css and php.
+A simple to-d-list web app created using HTML,CSS,Bootstrap,JavaScript and PHP.
