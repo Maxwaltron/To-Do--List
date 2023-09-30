@@ -1,34 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>To-Do List</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link rel="stylesheet" href="style.css">
+    <title>To-Do--List</title>
 </head>
+
 <body>
-    <div class="container mt-5">
-        <div class="row">
-            <div class="col-md-8 offset-md-2">
-                <h1 class="text-center mb-4">To-Do List</h1>
-                <form id="task-form" action="store.php" method="POST" class="form-inline mb-4">
-                    <input type="text" id="new-task" class="form-control mr-2" name="task_text" placeholder="Add a new task" required>
-                    <button type="submit" class="btn btn-primary">Add Task</button>
-                </form>    
-                <ul id="task-list" class="list-group">
-                    <!-- Tasks will be displayed here -->
-                </ul>
-            </div>
+
+    <div class="wrapper">
+        <div class="task-input">
+            <img src="bars-icon.svg">
+            <input type="text" placeholder="Add a new task">
         </div>
+
+        <div class="controls">
+            <div class="filters">
+                <span id="all" class="active">
+                    All
+                </span>
+                <span id="pending">Pending</span>
+                <span id="completed">Completed</span>
+            </div>
+            <button class="clear-btn">Clear All</button>
+        </div>
+        <ul class="task-box"></ul>
+
     </div>
 
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <script src="script.js"></script>
+    <script src="index.js"></script>
 </body>
+
 </html>
